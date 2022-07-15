@@ -39,9 +39,9 @@ class AppTest {
     public void testRandomCar( ArgumentsAccessor args ) {
         String[] strings = Arrays.asList(args.toArray()).toArray( new String[ 0 ] );
         List< String > cars = Arrays.asList( strings );
-        String carUsed = App.randomStringFromGivenArray(strings);
-        Boolean carsVerific = cars.contains(carUsed);
-        assertTrue(carsVerific, "o veiculo não foi encontrado");
+        String carInArray = App.randomStringFromGivenArray(strings);
+        Boolean carsValidated = cars.contains(carInArray);
+        assertTrue(carsValidated, "o veiculo não foi encontrado");
     }
 
 }
